@@ -128,7 +128,7 @@ private:
                 // Create session (may throw if peer fails to respond)
                 auto session_ptr = std::make_shared<kademlia::session>(
                     initial_peer,
-                    kademlia::endpoint{bind_addr, port},
+                    kademlia::endpoint{bind_addr, port}
                     //kademlia::endpoint{"::", port}, // IPv6?
                 );
 
