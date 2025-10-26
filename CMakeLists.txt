@@ -59,6 +59,7 @@ target_include_directories(dht-client PRIVATE
 target_link_libraries(dht-client PRIVATE
     kademlia
     pthread
+    crypto
 )
 
 # Optionally add these if kademlia requires Boost or OpenSSL:
